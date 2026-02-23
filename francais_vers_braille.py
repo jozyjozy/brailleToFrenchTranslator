@@ -6,7 +6,10 @@ Convention : 0 = down, 1 = up
 Pins : [pin0, pin1, pin2, pin3, pin4, pin5, pin6, pin7]
 """
 
-# Mapping Braille standard : dot numbers 1-6 → indices 0,1,2,4,5,6 (index 3 et 7 non utilisés en 6 points)
+# Mapping Braille standard (Perkins / BANA). Grille 6 points :
+#   dot1 dot4     → indices 0, 4
+#   dot2 dot5     → indices 1, 5
+#   dot3 dot6     → indices 2, 6   (index 3 et 7 réservés 8-dot)
 BRAILLE_LETTRES = {
     'a': [1, 0, 0, 0, 0, 0, 0, 0],
     'b': [1, 1, 0, 0, 0, 0, 0, 0],
@@ -32,7 +35,7 @@ BRAILLE_LETTRES = {
     'v': [1, 1, 1, 0, 0, 0, 1, 0],   # dots 1,2,3,6
     'w': [0, 1, 0, 0, 1, 1, 1, 0],   # dots 2,4,5,6
     'x': [1, 0, 1, 0, 1, 0, 1, 0],   # dots 1,3,4,6
-    'y': [1, 0, 1, 0, 1, 1, 1, 0],   # dots 1,3,5,6,7
+    'y': [1, 0, 1, 0, 1, 1, 1, 0],   # dots 1,3,4,5,6 (6-dot) / 1,3,5,6,7 (8-dot liblouis ⠽)
     'z': [1, 0, 1, 0, 0, 1, 1, 0],   # dots 1,3,5,6
 }
 
