@@ -4,21 +4,49 @@ Script Python qui convertit du texte français en **patterns Braille 8 pins**, a
 
 ## Prérequis
 
-- **Python 3.7+** (aucune dépendance externe)
+- **Python 3.7+**
+- **tkinter** (pour l’interface graphique)
 
 ## Installation
 
-Aucune. Cloner ou télécharger le dossier et lancer le script.
+Cloner ou télécharger le dossier.
+
+**macOS (Homebrew)** — Python installé via Homebrew n’inclut pas tkinter. Installer le paquet correspondant à la version de Python utilisée :
+
+```bash
+brew install python-tk@3.13   # si vous utilisez Python 3.13
+# ou python-tk@3.14 pour Python 3.14, etc.
+```
+
+Si `python3` pointe vers une version sans tk (ex. 3.14) alors que vous avez installé `python-tk@3.13`, lancez le script avec **Python 3.13** pour avoir la fenêtre graphique (voir ci‑dessous).
 
 ## Utilisation
 
+**Interface graphique** (fenêtre) :
+
 ```bash
-python3 francais_vers_braille.py
+python3.13 francais_vers_braille.py
 ```
 
-- Saisir une **phrase** ou une **lettre**, puis Entrée.
-- Le script affiche, pour chaque caractère, sa sortie Braille au format `[pin0, pin1, …, pin7]`.
-- Pour quitter : entrée vide ou `q`.
+Sous macOS avec Homebrew, si la fenêtre ne s’ouvre pas, utilisez explicitement la version de Python qui a tkinter, par exemple :
+
+```bash
+python3.13 francais_vers_braille.py
+```
+
+À l’exécution, **une fenêtre s’ouvre** avec une interface graphique :
+
+- Saisir du texte dans le champ : le **rendu Braille** (caractères Unicode) et le **tableau détail** (caractère → pins → symbole Braille) se mettent à jour en direct.
+- La zone détail est défilable (molette ou barre de défilement).
+
+Pour utiliser le **mode terminal** (sans fenêtre) :
+
+```bash
+python3 francais_vers_braille.py --cli
+```
+
+- Saisir une phrase ou une lettre, puis Entrée.
+- Pour quitter : entrée vide ou `quitter`.
 
 ### Exemple
 
