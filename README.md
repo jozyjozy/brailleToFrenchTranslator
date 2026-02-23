@@ -18,7 +18,7 @@ python3 francais_vers_braille.py
 
 - Saisir une **phrase** ou une **lettre**, puis Entrée.
 - Le script affiche, pour chaque caractère, sa sortie Braille au format `[pin0, pin1, …, pin7]`.
-- Pour quitter : entrée vide ou `q`.
+- Pour quitter : entrée vide ou `quitter`.
 
 ### Exemple
 
