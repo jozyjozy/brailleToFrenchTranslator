@@ -51,7 +51,7 @@ python3 francais_vers_braille.py --cli
 ### Exemple
 
 ```
-Entrez une phrase ou une lettre (vide + Entrée ou 'q' pour quitter) : Bonjour
+Entrez une phrase ou une lettre (vide + Entrée ou 'quitter' pour quitter) : Bonjour
 
      B  →  [1, 1, 0, 0, 0, 0, 0, 0]
      o  →  [1, 0, 1, 0, 0, 1, 0, 0]
