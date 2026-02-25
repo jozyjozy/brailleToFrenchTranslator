@@ -1,0 +1,4 @@
+Bonjour Laurence, je m'appelle Joseph et je suis ton fils.
+Ce projet a pour but de t'apprendre facilement le brail. 
+Je me suis permis de construire ce software sans t'en parler car je sais que dans la famille on aime pas demander de l'aide. 
+J'espère que ce cadeau te fera plaisir.
